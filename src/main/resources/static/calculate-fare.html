@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculate Fare</title>
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid rgb(0, 0, 255);
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="center">
+<h3>Calculate Fare</h3>
+<form action="/cab/fare" method="post">
+  <label for="distance">Distance (km):</label><br>
+  <input type="text" id="distance" name="distance" placeholder="10" required><br><br>
+  <label for="typeOfCab">Type of Cab:</label><br>
+  <input type="text" id="typeOfCab" name="typeOfCab" placeholder="2" required><br>
+  <small>1 = Economy, 2 = Luxury, 3 = SUV</small><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br><a href="index.html">Back to home</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Cab</title>
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid rgb(0, 0, 255);
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="center">
+<h3>Book A Cab</h3>
+<form action="/cab/book" method="post">
+  <label for="from">From Location:</label><br>
+  <input type="text" id="from" name="from" placeholder="Home" required><br>
+  <label for="to">To Location:</label><br>
+  <input type="text" id="to" name="to" placeholder="Work" required><br><br>
+  <label for="typeOfCab">Type of Cab:</label><br>
+  <input type="text" id="typeOfCab" name="typeOfCab" placeholder="2" required><br>
+  <small>1 = Economy, 2 = Luxury, 3 = SUV</small><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br><a href="index.html">Back to home</a>
+</div>
+</body>
+</html>
